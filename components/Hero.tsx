@@ -27,8 +27,9 @@ const Hero = () => {
             className='text-center text-[40px] md:text-5xl lg:text-6xl'
             words='Transforming Concepts into Seamless User Experiences'
           />
+          {/* Add animation to it later */}
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-1xl'>
-            Hi, I&apos;m Anh, a Graduate Software Developer based in Adelaide.
+            Hi, I&apos;m Anh, a Software Developer based in Adelaide.
           </p>
           <a href='#about'>
             <MagicButton 
