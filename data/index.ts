@@ -205,13 +205,16 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      profile:'https://github.com/AnhNotAnh'
     },
     {
       id: 2,
       img: "/twit.svg",
+      profile:'https://github.com/AnhNotAnh'
     },
     {
       id: 3,
       img: "/link.svg",
+      profile:'https://www.linkedin.com/in/duy-quoc-anh-nguyen'
     },
   ];
