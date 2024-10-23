@@ -30,9 +30,15 @@ export const PinContainer = ({
 
     return (
         <div
-        onClick={() => {href ? window.location.href = href : window.location.href = '/'} }
+        onClick={() => {
+            if (href) {
+              window.location.href = href;
+            } else {
+              window.location.href = '/';
+            }
+          }}
         className={cn(
-            "relative group/pin z-50  cursor-pointer",
+            "relative group/pin z-50 cursor-pointer",
             containerClassName
         )}
         onMouseEnter={onMouseEnter}
