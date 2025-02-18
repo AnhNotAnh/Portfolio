@@ -1,0 +1,37 @@
+<svg width="500" height="220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define Blur Effect -->
+  <defs>
+    <filter id="blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Blurry Rounded Background -->
+  <rect x="10" y="10" width="480" height="200" rx="20" ry="20" fill="#293741" opacity="0.3" filter="url(#blur)"/>
+
+  <!-- Code Text -->
+  <text x="20" y="40" font-family="monospace" font-size="14" fill="white">
+    using Microsoft.AspNetCore.Authentication.Cookies;
+  </text>
+  <text x="20" y="60" font-family="monospace" font-size="14" fill="white">
+    using Microsoft.AspNetCore.Authentication.JwtBearer;
+  </text>
+  <text x="20" y="80" font-family="monospace" font-size="14" fill="white">
+    using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+  </text>
+  <text x="20" y="100" font-family="monospace" font-size="14" fill="white">
+    using Microsoft.AspNetCore.Builder;
+  </text>
+  <text x="20" y="120" font-family="monospace" font-size="14" fill="white">
+    using Microsoft.EntityFrameworkCore;
+  </text>
+  <text x="20" y="140" font-family="monospace" font-size="14" fill="white">
+    using Microsoft.IdentityModel.Tokens;
+  </text>
+  <text x="20" y="160" font-family="monospace" font-size="14" fill="white">
+    using QuizApp.Data;
+  </text>
+  <text x="20" y="180" font-family="monospace" font-size="14" fill="white">
+    using System.Security.Claims;
+  </text>
+</svg>
