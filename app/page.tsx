@@ -15,7 +15,8 @@ export default function Home() {
         <Hero />
         <Grid />
         <RecentProjects/>
-        <Experience />
+        {/* Uncomment this when you have enough experience */}
+        {/* <Experience /> */}
         <Approach />
         <Footer />
       </div>
