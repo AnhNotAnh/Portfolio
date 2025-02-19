@@ -1,14 +1,14 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Experiences", link: "#experiences" },
+    // { name: "Experiences", link: "#experiences" },
     { name: "Contact", link: "#contact" },
   ];
   
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
+      title: "I focus on team success, ensuring open communication and constructive discussions to drive progress.",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -38,7 +38,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
+      title: "Fuelled by curiosity, driven by challenges.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -74,8 +74,8 @@ export const navItems = [
       id: 1,
       title: "Medical Sonography Digital Logbook",
       des: "Logbook website is designed for Medical Sonography student to digitally log their scans into the logbook site and link their clinical training supervisor to oversee their logbook.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      img: "/project1.svg",
+      iconLists: ["/C_sharp.svg", "/react.svg", "/sqlite.svg", "/css.svg", "/fm.svg"],
       link: "https://github.com/AnhNotAnh/ICT-Capstone-Project",
     },
     {
