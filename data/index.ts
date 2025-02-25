@@ -49,7 +49,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a Quiz app with ASP.NET Core",
+      title: "Currently building and scaling web application with ASP.NET Core",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -75,31 +75,39 @@ export const navItems = [
       title: "Medical Sonography Digital Logbook",
       des: "Logbook website is designed for Medical Sonography student to digitally log their scans into the logbook site and link their clinical training supervisor to oversee their logbook.",
       img: "/project1.svg",
-      iconLists: ["/C_sharp.svg", "/react.svg", "/sqlite.svg", "/css.svg", "/fm.svg"],
+      iconLists: ["/react.svg", "/Node.js.svg", "/sqlite.svg", "/css.svg", "/Jira.svg"],
       link: "https://github.com/AnhNotAnh/ICT-Capstone-Project",
     },
     {
       id: 2,
-      title: "Deadly Corp Game",
-      des: "Travel to moons and collect cargo to sell, money will be used to item - exchange more percentage to loot higher value cargo",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/AnhNotAnh/DeadlyCorpGame",
+      title: "Green Scape Analytics",
+      des: "GreenScape Analytics is a multi-page environmental data web application that enables users to search and visualize key statistics—such as emissions, temperature, and air quality—across regions, countries, and cities",
+      img: "/project2.svg",
+      iconLists: ["/Bootstrap.svg", "/react.svg", "/css.svg", "/Asp.net.svg", "/C_sharp.svg"],
+      link: "https://github.com/AnhNotAnh/GreenScape-Analytics",
     },
     {
       id: 3,
-      title: "Farm Planting Game",
-      des: "This farm simulation game allow user to interact with basic farming tool and item which is ruled in the game. User will have turn to play game whether planting or harvest, etc... The game will give you a hard time to stop playing it.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/AnhNotAnh/Farm-Planting-Game",
+      title: "Deadly Corp Game",
+      des: "Travel to moons and collect cargo to sell, money will be used to item - exchange more percentage to loot higher value cargo",
+      img: "/project3.svg",
+      iconLists: ["/C++.svg", "/git.svg"],
+      link: "https://github.com/AnhNotAnh/DeadlyCorpGame",
     },
+    // {
+    //   id: 3,
+    //   title: "Farm Planting Game",
+    //   des: "This farm simulation game allow user to interact with basic farming tool and item which is ruled in the game. User will have turn to play game whether planting or harvest, etc... The game will give you a hard time to stop playing it.",
+    //   img: "/p3.svg",
+    //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    //   link: "https://github.com/AnhNotAnh/Farm-Planting-Game",
+    // },
     {
       id: 4,
       title: "Soylent Green Ventures Website",
       des: "Explore the top 3 restaurants in Soylent Green Ventures where you can see everything restaurants have with just a click",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      img: "/project4.svg",
+      iconLists: ["/react.svg", "/sqlite.svg", "/css.svg", "/Node.js.svg", "/Jira.svg"],
       link: "https://github.com/Freaky128/Project-Studio",
     },
   ];
@@ -207,13 +215,13 @@ export const navItems = [
       img: "/git.svg",
       profile:'https://github.com/AnhNotAnh'
     },
+    // {
+    //   id: 2,
+    //   img: "/twit.svg",
+    //   profile:'https://github.com/AnhNotAnh'
+    // },
     {
       id: 2,
-      img: "/twit.svg",
-      profile:'https://github.com/AnhNotAnh'
-    },
-    {
-      id: 3,
       img: "/link.svg",
       profile:'https://www.linkedin.com/in/duy-quoc-anh-nguyen'
     },
