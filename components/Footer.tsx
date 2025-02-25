@@ -12,12 +12,10 @@ const Footer = () => {
         <footer className="w-full mb-[100px] pb-10 md:mb-5" id="contact">
         <div className="flex flex-col items-center">
             <h1 className="heading lg:max-w-[45vw]">
-            Ready to take <span className="text-purple">your</span> digital
-            presence to the next level?
+            Every <span className="text-purple">great product</span> starts with a <span className="text-purple">great developer</span>.
             </h1>
             <p className="text-white-200 md:mt-10 my-5 text-center">
-            I&apos;m excited to bring creative solutions, clean code, and a collaborative mindset 
-            to innovative teams, driving impactful results.
+            Let&apos;s talk about how I can help.
             </p>
             <div onClick={() => setIsModalOpen(true)}>
             <MagicButton

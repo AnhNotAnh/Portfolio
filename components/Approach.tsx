@@ -12,11 +12,9 @@ const Approach = () => {
         </h1>
         <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
-            title="Planning & Strategy"
+            title="Planning &  System Design"
             icon={<AceternityIcon order="Phase 1" />}
-            desc="We'll collaborate to map out your website's goals, target audience, 
-            and key functionalities. We'll discuss things like site structure, 
-            navigation, and content requirements."
+            desc=" Gather requirements with stakeholders, focusing on both functional and non-functional aspects. Map them to a suitable architecture (e.g., layered or modular) to maintain clarity and scalability."
         >
             <CanvasRevealEffect
             animationSpeed={5.1}
@@ -24,11 +22,9 @@ const Approach = () => {
             />
         </Card>
         <Card
-            title="Development & Progress Update"
+            title="Development & Code Quality"
             icon={<AceternityIcon order="Phase 2" />}
-            desc="Together, we'll transform ideas into wireframes and prototypes. I ensure
-            the design reflects your brand and is user-friendly, providing you with 
-            visual mockups before coding begins."
+            desc="Implement features iteratively using Agile, incorporating version control and structured development workflows. Apply foundational testing practices and gradually integrate automation and code reviews to enhance reliability."
         >
             <CanvasRevealEffect
             animationSpeed={3}
@@ -42,11 +38,9 @@ const Approach = () => {
             />
         </Card>
         <Card
-            title="Development & Launch"
+            title="Deployment & Continuous Improvement"
             icon={<AceternityIcon order="Phase 3" />}
-            desc="This is where the magic happens! Based on the approved design, 
-            I'll translate everything into functional code, building your website
-            from the ground up."
+            desc="Follow best practices for debugging, optimizing performance, and maintaining clean code. Utilize available tools for monitoring and quality assurance, progressively refining testing and deployment strategies to improve software maintainability."
         >
             <CanvasRevealEffect
             animationSpeed={3}
