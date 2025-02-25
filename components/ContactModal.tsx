@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import emailjs from '@emailjs/browser';
-import Modal from 'react-modal';
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import Modal from "react-modal";
 
 interface ContactModalProps {
     isOpen: boolean;
@@ -11,9 +11,9 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
 
     emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!);
     const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
+        name: "",
+        email: "",
+        message: "",
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -33,9 +33,9 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
             process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         );
         onClose();
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: "", email: "", message: "" });
         } catch (error) {
-        console.error('Email send failed:', error);
+        console.error("Email send failed:", error);
         } finally {
         setIsSubmitting(false);
         }
@@ -49,7 +49,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
         overlayClassName="fixed inset-0 bg-black/50 backdrop-blur-sm"
         >
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <h2 className="text-2xl font-bold text-white mb-4">Let's Connect</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">Let"s Connect</h2>
             <input
             type="text"
             placeholder="Your Name"
@@ -86,7 +86,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                 disabled={isSubmitting}
                 className="px-4 py-2 rounded-lg bg-purple text-white hover:bg-purple/80 disabled:opacity-50"
             >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? "Sending..." : "Send Message"}
             </button>
             </div>
         </form>
