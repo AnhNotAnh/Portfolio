@@ -1,6 +1,13 @@
-import { useState } from "react";
+'use client'
+
+import { useState} from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "react-modal";
+
+// Set the app element for Modal
+if (typeof window !== 'undefined') {
+  Modal.setAppElement('body');
+}
 
 interface ContactModalProps {
     isOpen: boolean;
@@ -45,8 +52,22 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
         <Modal
         isOpen={isOpen}
         onRequestClose={onClose}
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#04071d] p-8 rounded-3xl border border-white/[0.1] w-[90%] max-w-md"
-        overlayClassName="fixed inset-0 bg-black/50 backdrop-blur-sm"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#04071d] p-8 rounded-3xl border border-white/[0.1] w-[90%] max-w-md z-[100]"
+        overlayClassName="fixed inset-0 bg-black/50 backdrop-blur-sm z-[99]"
+        style={{
+            overlay: {
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.75)',
+            zIndex: 9999
+            },
+            content: {
+            zIndex: 10000
+            }
+        }}
         >
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <h2 className="text-2xl font-bold text-white mb-4">Let&apos;s Connect</h2>
