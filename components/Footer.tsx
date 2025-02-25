@@ -1,11 +1,15 @@
+'use client'
+import { useState } from 'react';
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
+import ContactModal from './ContactModal';
 
 const Footer = () => {
-  return (
-    <footer className="w-full mb-[100px] pb-10 md:mb-5" id="contact">
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    return (
+        <footer className="w-full mb-[100px] pb-10 md:mb-5" id="contact">
         <div className="flex flex-col items-center">
             <h1 className="heading lg:max-w-[45vw]">
             Ready to take <span className="text-purple">your</span> digital
@@ -15,17 +19,17 @@ const Footer = () => {
             I&apos;m excited to bring creative solutions, clean code, and a collaborative mindset 
             to innovative teams, driving impactful results.
             </p>
-            <a href="mailto:quocanh01082020@gmail.com">
+            <div onClick={() => setIsModalOpen(true)}>
             <MagicButton
                 title="Let's get in touch"
                 icon={<FaLocationArrow />}
                 position="right"
             />
-            </a>
+            </div>
         </div>
         <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
             <p className="md:text-base text-sm md:font-normal font-light">
-            Copyright © 2024 Duy Quoc Anh Nguyen
+            Copyright © 2025 Duy Quoc Anh Nguyen
             </p>
             <div className="flex items-center md:gap-3 gap-6">
             {socialMedia.map((info) => (
@@ -40,8 +44,12 @@ const Footer = () => {
             ))}
             </div>
         </div>
-    </footer>
-  );
+        <ContactModal 
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+        />
+        </footer>
+    );
 };
 
 export default Footer;
