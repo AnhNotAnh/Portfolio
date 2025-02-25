@@ -49,7 +49,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
         overlayClassName="fixed inset-0 bg-black/50 backdrop-blur-sm"
         >
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <h2 className="text-2xl font-bold text-white mb-4">Let"s Connect</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">Let&apos;s Connect</h2>
             <input
             type="text"
             placeholder="Your Name"
