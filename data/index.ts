@@ -84,7 +84,7 @@ export const navItems = [
       des: "GreenScape Analytics is a multi-page environmental data web application that enables users to search and visualize key statistics—such as emissions, temperature, and air quality—across regions, countries, and cities",
       img: "/project2.svg",
       iconLists: ["/Bootstrap.svg", "/react.svg", "/css.svg", "/Asp.net.svg", "/C_sharp.svg"],
-      link: "https://github.com/AnhNotAnh/GreenScape-Analytics",
+      link: "https://www.youtube.com/watch?v=aC0wWOaBoz8",
     },
     {
       id: 3,
